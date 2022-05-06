@@ -1,0 +1,98 @@
+.main-container{
+    
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+    background: #FFFFFF;
+}
+.submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 375px;
+    left: calc(50% - 173.5px + 361.5px);
+    top: 54.59%;
+    bottom: 41.31%;
+}
+
+.logo{
+    position: absolute;
+    left: 68.89%;
+    right: 19.11%;
+    top: 9.77%;
+    bottom: 86.63%;
+}
+.image{
+    position: absolute;
+    width: 720px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+}
+
+.mat-form-field{
+    width: 375px;
+    height: 55px;
+}
+
+.email-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 12px;
+
+    position: absolute;
+    width: 375px;
+    height: 55px;
+    left: 894px;
+    top: 349px;
+
+    /* other/filled-input-background */
+}
+
+.pass-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 12px;
+
+    position: absolute;
+    width: 375px;
+    height: 55px;
+    left: 894px;
+    top: 454px;
+}
+
+h1 {
+    // font-size: 40px;
+    // font-weight: 700;
+    // letter-spacing: -1.5px;
+    // line-height: 112.03px;
+    position: absolute;
+    width: 95px;
+    height: 113px;
+    left: 1031px;
+    top: 175px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 112px;
+    /* or 280% */
+
+    letter-spacing: -1.5px;
+
+    color: #000000;
+}
+
+.mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab :enabled{
+    background-color: #F50057;
+}

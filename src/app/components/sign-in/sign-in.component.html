@@ -1,0 +1,31 @@
+<div class="main-container">
+    <div class="image">
+        <img src="../../../assets/images/Title.png" width="720" height="1024" alt="title image">
+    </div>
+    <div class="login">
+        <img src="../../../assets/images/Logo.svg" class="logo" alt="logo">
+        <h1>Login</h1>
+        <form [formGroup]="form" (ngSubmit)="submit()" class="login-form">
+            <div class="email-field">
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter your email</mat-label>
+                    <input matInput placeholder="pat@example.com" name="mail" formControlName="mail" required>
+                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                  </mat-form-field>
+            </div>
+            <div class="pass-field">
+                <mat-form-field appearance="fill">
+                  <mat-label>Enter your password</mat-label>
+                  <input matInput [type]="hide ? 'password' : 'text'" name="pass" formControlName="pass" required>
+                  <button mat-icon-button type="button" matSuffix (click)="hide = !hide" >
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                  <mat-error *ngIf="password.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </div>             
+            <button class="submit" mat-raised-button type="submit" [disabled]="form.invalid || isLoading">
+                Login
+            </button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+.logotype {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+.mat-toolbar.mat-accent{
+  background-color: #F50057;
+}
+.button-container {
+  background-color: grey;
+  border-radius: 50%;
+}
